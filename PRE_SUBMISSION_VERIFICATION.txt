@@ -1,0 +1,21 @@
+PRE-SUBMISSION VERIFICATION NOTE
+
+Static RTL checks: PASS
+Required RTL modules: 8
+Input stimulus: 10000 pixels
+Expected valid hardware outputs: 9604
+Golden reference generated: PASS
+Maximum |Gx| for supplied image: 696
+Maximum |Gy| for supplied image: 715
+Maximum Manhattan magnitude: 974
+Euclidean/Manhattan MAE on supplied image: 24.401840
+
+Important:
+A Vivado/XSim compile cannot be executed in this environment. Run the supplied
+testbench locally in Vivado before final submission. The testbench is
+self-checking and must report:
+    PASS: frame complete; output count = 9604
+
+Then compare SobelEdgeVHDL.txt with expected_vhdl_output.txt. The required
+functional result is:
+    Exact Manhattan mismatches: 0
